@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: rgb(206, 198, 187);
+}
+
+.faq-container {
+    text-align: center;
+}
+
+.faq {
+    text-align: left;
+    border: 1px solid black;
+    width: 350px;
+    margin: 15px auto auto auto;
+    padding: 15px 15px 15px 25px;  
+    border-radius: 10px; 
+    position: relative;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+
+.faq h2{
+    margin: 10px;
+    padding-right: 40px;
+}
+
+.faq.active::before {
+    content: "\f086";
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 900;
+    color: aquamarine;
+    font-size: 7rem;
+    position: absolute;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.faq .faq-text {
+    display: none;
+}
+
+.faq.active .faq-text{
+    display: block;
+}
+
+.faq.active {
+    background-color: #fff;
+}
+
+.fas{
+    width: 15px;
+    height: 15px;  
+    
+    color: white;
+}
+button {
+    border-radius: 50%;
+    border: none;
+    top: 25px;
+    right: 20px;
+    position:absolute ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: grey;
+    
+}
+
+.faq .fa-times {
+    display: none;
+}
+
+.faq .fa-chevron-down {
+    display: block;
+}
+
+.faq.active .fa-times {
+    display: block;
+}
+
+.faq.active .fa-chevron-down {
+    display: none;
+}
+
+
+
